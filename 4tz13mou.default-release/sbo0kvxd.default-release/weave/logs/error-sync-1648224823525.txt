@@ -1,0 +1,45 @@
+1648217509721	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1648217527293	Sync.SyncScheduler	DEBUG	Going to sleep, doing a quick sync.
+1648217527294	Sync.Service	DEBUG	User-Agent: Firefox/98.0.2 (Linux x86_64) FxSync/1.100.0.20220323001514.desktop
+1648217527294	Sync.Service	INFO	Starting sync at 2022-03-25 19:42:07 in browser session umBloaRum1V8
+1648217527294	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1648217527297	Sync.Status	INFO	Resetting Status.
+1648217527297	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1648217527297	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1648224815490	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1648224815491	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1648224815493	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1648224815494	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1648224815556	Sync.SyncScheduler	DEBUG	Woke from sleep.
+1648224815557	Sync.SyncScheduler	DEBUG	Online, will sync in 2s.
+1648224815557	Sync.SyncScheduler	DEBUG	Next sync in 2000 ms. (why=wake_notification)
+1648224815557	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1648224817557	Sync.Service	DEBUG	User-Agent: Firefox/98.0.2 (Linux x86_64) FxSync/1.100.0.20220323001514.desktop
+1648224817558	Sync.Service	INFO	Starting sync at 2022-03-25 21:43:37 in browser session umBloaRum1V8
+1648224817558	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.js:62:5) JS Stack trace: LockException@util.js:62:5
+throwLockException@util.js:148:11
+WrappedLock@util.js:162:15
+_lockedSync@service.js:1370:6
+sync/<@service.js:1334:18
+WrappedCatch@util.js:133:27
+sync@service.js:1335:7
+1648224817558	Sync.Service	INFO	Cannot start sync: already syncing?
+1648224822061	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1648224822061	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1648224822063	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1648224822065	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1648224822066	Sync.Service	DEBUG	User-Agent: Firefox/98.0.2 (Linux x86_64) FxSync/1.100.0.20220323001514.desktop
+1648224822066	Sync.Service	INFO	Starting sync at 2022-03-25 21:43:42 in browser session umBloaRum1V8
+1648224822066	Sync.Service	DEBUG	Exception calling anonymous function: LockException: Could not acquire lock. Label: "service.js: sync".(resource://services-sync/util.js:62:5) JS Stack trace: LockException@util.js:62:5
+throwLockException@util.js:148:11
+WrappedLock@util.js:162:15
+_lockedSync@service.js:1370:6
+sync/<@service.js:1334:18
+WrappedCatch@util.js:133:27
+sync@service.js:1335:7
+1648224822066	Sync.Service	INFO	Cannot start sync: already syncing?
+1648224823222	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1648224823520	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/collections failed: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1648224823521	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+1648224823522	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1648224823525	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available

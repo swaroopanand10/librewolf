@@ -1,0 +1,25 @@
+1648890206679	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1648890749747	Sync.Service	DEBUG	User-Agent: Firefox/98.0.2 (Linux x86_64) FxSync/1.100.0.20220323001514.desktop
+1648890749747	Sync.Service	INFO	Starting sync at 2022-04-02 14:42:29 in browser session TwHH25OxbHx6
+1648890749747	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1648890749749	Sync.Status	INFO	Resetting Status.
+1648890749749	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1648890749749	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1648890749749	FirefoxAccounts	DEBUG	getOAuthToken enter
+1648890749749	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1648890749749	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1648890749750	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1648890750082	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/collections
+1648890750082	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/configuration
+1648890750537	Sync.Resource	DEBUG	GET fail 503 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/configuration
+1648890750537	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/configuration failed with status 503
+1648890750537	Sync.Service	WARN	info/configuration returned 503 - using default configuration
+1648890750537	Sync.ErrorHandler	DEBUG	Got Retry-After: 3600
+1648890750537	Sync.Status	DEBUG	Status.sync: success.sync => error.sync.reason.serverMaintenance
+1648890750537	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1648890750537	Sync.SyncScheduler	DEBUG	Got backoff notification: 3600000ms
+1648890750537	Sync.SyncScheduler	DEBUG	Fuzzed minimum next sync: 1648894350537
+1648890750537	Sync.ErrorHandler	ERROR	Sync encountered an error: Error: Aborting sync, remote setup failed(resource://services-sync/stages/enginesync.js:95:13) JS Stack trace: sync@enginesync.js:95:13
+1648890750538	Sync.SyncScheduler	DEBUG	Starting client-initiated backoff. Next sync in 4155598.016471167 ms.
+1648890750538	Sync.SyncScheduler	DEBUG	Next sync in 4155598.016471167 ms. (why=client-backoff-schedule)
+1648890750542	Sync.Service	DEBUG	Exception calling anonymous function: Error: Aborting sync, remote setup failed(resource://services-sync/stages/enginesync.js:95:13) JS Stack trace: sync@enginesync.js:95:13

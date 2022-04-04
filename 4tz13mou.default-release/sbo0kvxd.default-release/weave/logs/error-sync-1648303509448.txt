@@ -1,0 +1,29 @@
+1648302411511	Sync.LogManager	DEBUG	Flushing file log
+1648302411514	Sync.LogManager	DEBUG	Log cleanup threshold time: 1647438411514
+1648302411532	Sync.LogManager	DEBUG	Done deleting files.
+1648303509437	Sync.Service	DEBUG	User-Agent: Firefox/98.0.2 (Linux x86_64) FxSync/1.100.0.20220323001514.desktop
+1648303509437	Sync.Service	INFO	Starting sync at 2022-03-26 19:35:09 in browser session HuGkt_jPXpXS
+1648303509438	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1648303509441	Sync.Status	INFO	Resetting Status.
+1648303509441	Sync.Status	DEBUG	Status.service: error.sync.failed => success.status_ok
+1648303509441	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1648303509441	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1648303509442	Sync.ErrorHandler	ERROR	Sync encountered an error: Error: Can't sync: Network is offline(resource://services-sync/stages/enginesync.js:59:13) JS Stack trace: sync@enginesync.js:59:13
+onNotify@service.js:1351:28
+WrappedNotify@util.js:210:32
+WrappedLock@util.js:166:27
+_lockedSync@service.js:1370:6
+sync/<@service.js:1334:18
+WrappedCatch@util.js:133:27
+sync@service.js:1335:7
+1648303509443	Sync.SyncScheduler	DEBUG	Sync error count has exceeded 3; enforcing backoff.
+1648303509443	Sync.SyncScheduler	DEBUG	Starting client-initiated backoff. Next sync in 6626708 ms.
+1648303509443	Sync.SyncScheduler	DEBUG	Next sync in 6626708 ms. (why=client-backoff-schedule)
+1648303509447	Sync.Service	DEBUG	Exception calling anonymous function: Error: Can't sync: Network is offline(resource://services-sync/stages/enginesync.js:59:13) JS Stack trace: sync@enginesync.js:59:13
+onNotify@service.js:1351:28
+WrappedNotify@util.js:210:32
+WrappedLock@util.js:166:27
+_lockedSync@service.js:1370:6
+sync/<@service.js:1334:18
+WrappedCatch@util.js:133:27
+sync@service.js:1335:7

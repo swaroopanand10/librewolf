@@ -1,0 +1,39 @@
+1649009402560	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1649010640214	Sync.Service	DEBUG	User-Agent: Firefox/98.0.2 (Linux x86_64) FxSync/1.100.0.20220323001514.desktop
+1649010640214	Sync.Service	INFO	Starting sync at 2022-04-04 00:00:40 in browser session AFfLaoP16OVU
+1649010640214	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1649010640219	Sync.Status	INFO	Resetting Status.
+1649010640219	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1649010640220	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1649010640220	FirefoxAccounts	DEBUG	getOAuthToken enter
+1649010640221	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1649010640221	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1649010640221	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1649010640222	Sync.SyncAuthManager	INFO	Getting sync key
+1649010640222	Sync.SyncAuthManager	INFO	Getting a sync token from: https://token.services.mozilla.com/1.0/sync/1.5
+1649010640222	Sync.SyncAuthManager	DEBUG	Getting a token using OAuth
+1649010640222	FirefoxAccounts	DEBUG	getOAuthToken enter
+1649010640222	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1649010640222	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1649010640223	Services.Common.TokenServerClient	DEBUG	Beginning OAuth token exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1649010640223	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1649010668677	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 failed: 2152398919 - NS_ERROR_NET_INTERRUPT
+1649010668677	Sync.SyncAuthManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.js:39:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.js:62:16
+_tokenServerExchangeRequest@tokenserverclient.js:241:13
+1649010668677	Sync.Status	DEBUG	Status.login: success.login => error.login.reason.network
+1649010668677	Sync.Status	DEBUG	Status.service: success.status_ok => error.login.failed
+1649010668678	Sync.SyncAuthManager	ERROR	Failed to fetch a token for authentication: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.js:39:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.js:62:16
+_tokenServerExchangeRequest@tokenserverclient.js:241:13
+1649010675454	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1649010677675	Sync.Resource	DEBUG	GET fail 401 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/collections
+1649010677675	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/collections failed with status 401
+1649010677675	Sync.Service	INFO	Logging out
+1649010677675	Sync.SyncScheduler	DEBUG	Next sync in 3600000 ms. (why=schedule)
+1649010677675	Sync.ErrorHandler	INFO	Got 401 response; resetting clusterURL.
+1649010677675	Sync.ErrorHandler	DEBUG	New mid-sync 401 failure. Making a note.
+1649010677676	Sync.ErrorHandler	INFO	Attempting to schedule another sync.
+1649010677676	Sync.Service	ERROR	Aborting sync: failed to get collections.
+1649010677676	Sync.ErrorHandler	ERROR	Sync encountered an error: {"data":"0","url":"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/collections","status":401,"success":false,"headers":{"alt-svc":"clear","content-length":"1","content-type":"application/json","date":"Sun, 03 Apr 2022 18:31:14 GMT","server":"openresty/1.15.8.2","via":"1.1 google","x-firefox-spdy":"h2","x-weave-timestamp":"1649010674.74"},"obj":0}
+1649010677677	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1649010677677	Sync.Telemetry	INFO	Early submission of sync telemetry due to changed IDs/NodeType
+1649010677682	Sync.Service	DEBUG	Exception calling anonymous function: {"data":"0","url":"https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/collections","status":401,"success":false,"headers":{"alt-svc":"clear","content-length":"1","content-type":"application/json","date":"Sun, 03 Apr 2022 18:31:14 GMT","server":"openresty/1.15.8.2","via":"1.1 google","x-firefox-spdy":"h2","x-weave-timestamp":"1649010674.74"},"obj":0}

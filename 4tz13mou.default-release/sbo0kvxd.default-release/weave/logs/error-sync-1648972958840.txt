@@ -1,0 +1,32 @@
+1648972875824	Sync.LogManager	DEBUG	Flushing file log
+1648972875859	Sync.LogManager	DEBUG	Log cleanup threshold time: 1648108875859
+1648972875893	Sync.LogManager	DEBUG	Done deleting files.
+1648972877012	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: true
+1648972878744	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: true
+1648972958825	Sync.Service	DEBUG	User-Agent: Firefox/98.0.2 (Linux x86_64) FxSync/1.100.0.20220323001514.desktop
+1648972958825	Sync.Service	INFO	Starting sync at 2022-04-03 13:32:38 in browser session AFfLaoP16OVU
+1648972958825	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1648972958830	Sync.Status	INFO	Resetting Status.
+1648972958830	Sync.Status	DEBUG	Status.service: error.login.failed => success.status_ok
+1648972958830	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1648972958830	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1648972958830	Sync.ErrorHandler	ERROR	Sync encountered an error: Error: Can't sync: Network is offline(resource://services-sync/stages/enginesync.js:59:13) JS Stack trace: sync@enginesync.js:59:13
+onNotify@service.js:1351:28
+WrappedNotify@util.js:210:32
+WrappedLock@util.js:166:27
+_lockedSync@service.js:1370:6
+sync/<@service.js:1334:18
+WrappedCatch@util.js:133:27
+sync@service.js:1335:7
+1648972958831	Sync.SyncScheduler	DEBUG	Sync error count has exceeded 3; enforcing backoff.
+1648972958832	Sync.SyncScheduler	DEBUG	Starting client-initiated backoff. Next sync in 4931540 ms.
+1648972958832	Sync.SyncScheduler	DEBUG	Next sync in 4931540 ms. (why=client-backoff-schedule)
+1648972958833	Sync.Telemetry	INFO	Early submission of sync telemetry due to changed IDs/NodeType
+1648972958839	Sync.Service	DEBUG	Exception calling anonymous function: Error: Can't sync: Network is offline(resource://services-sync/stages/enginesync.js:59:13) JS Stack trace: sync@enginesync.js:59:13
+onNotify@service.js:1351:28
+WrappedNotify@util.js:210:32
+WrappedLock@util.js:166:27
+_lockedSync@service.js:1370:6
+sync/<@service.js:1334:18
+WrappedCatch@util.js:133:27
+sync@service.js:1335:7

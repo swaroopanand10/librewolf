@@ -1,0 +1,27 @@
+1648962652867	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1648962903181	Sync.SyncScheduler	DEBUG	Network link status changed to "down". Offline?: false
+1648962903181	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1648962903185	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1648962903187	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1648963109166	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1648963111036	Sync.SyncScheduler	DEBUG	Network link status changed to "up". Offline?: false
+1648963111036	Sync.SyncScheduler	DEBUG	Network link looks up. Syncing.
+1648963111041	Sync.SyncScheduler	DEBUG	Network link status changed to "changed". Offline?: false
+1648963111043	Sync.Service	DEBUG	User-Agent: Firefox/98.0.2 (Linux x86_64) FxSync/1.100.0.20220323001514.desktop
+1648963111043	Sync.Service	INFO	Starting sync at 2022-04-03 10:48:31 in browser session AFfLaoP16OVU
+1648963111044	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1648963111048	Sync.Status	INFO	Resetting Status.
+1648963111048	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1648963111049	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1648963111049	FirefoxAccounts	DEBUG	getOAuthToken enter
+1648963111050	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1648963111050	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1648963111051	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1648963111056	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1648963111056	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1648963111057	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/collections failed: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1648963111058	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1648963111058	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1648963111058	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available
+1648963111058	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1648963111060	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "The lookup of the hostname failed"  nsresult: "0x804b001e (NS_ERROR_UNKNOWN_HOST)"  location: "<unknown>"  data: no] No traceback available

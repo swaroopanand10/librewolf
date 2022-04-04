@@ -1,0 +1,36 @@
+1648720782081	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1648721382081	Sync.Service	DEBUG	User-Agent: Firefox/98.0.2 (Linux x86_64) FxSync/1.100.0.20220323001514.desktop
+1648721382081	Sync.Service	INFO	Starting sync at 2022-03-31 15:39:42 in browser session 3N0xVAOS6GRJ
+1648721382081	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1648721382083	Sync.Status	INFO	Resetting Status.
+1648721382083	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1648721382083	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1648721382083	FirefoxAccounts	DEBUG	getOAuthToken enter
+1648721382083	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1648721382084	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1648721382084	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1648721382084	Sync.SyncAuthManager	INFO	Getting sync key
+1648721382084	Sync.SyncAuthManager	INFO	Getting a sync token from: https://token.services.mozilla.com/1.0/sync/1.5
+1648721382084	Sync.SyncAuthManager	DEBUG	Getting a token using OAuth
+1648721382084	FirefoxAccounts	DEBUG	getOAuthToken enter
+1648721382084	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1648721382084	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1648721382084	Services.Common.TokenServerClient	DEBUG	Beginning OAuth token exchange: https://token.services.mozilla.com/1.0/sync/1.5
+1648721382085	Services.Common.RESTRequest	DEBUG	GET request to https://token.services.mozilla.com/1.0/sync/1.5
+1648721383356	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile 304
+1648721383405	Services.Common.RESTRequest	DEBUG	GET https://token.services.mozilla.com/1.0/sync/1.5 200
+1648721383406	Services.Common.TokenServerClient	DEBUG	Got token response: 200
+1648721383406	Services.Common.TokenServerClient	DEBUG	Successful token response
+1648721383406	Sync.Status	DEBUG	Status.login: success.login => success.login
+1648721383406	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1648721383407	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1648721383867	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/collections
+1648721383867	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/configuration
+1648721383868	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1648721384072	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/configuration failed: [Exception... "The connection was established, but no data was ever received"  nsresult: "0x804b0014 (NS_ERROR_NET_RESET)"  location: "<unknown>"  data: no] No traceback available
+1648721384073	Sync.Service	WARN	Failed to fetch info/configuration: [Exception... "The connection was established, but no data was ever received"  nsresult: "0x804b0014 (NS_ERROR_NET_RESET)"  location: "<unknown>"  data: no] No traceback available
+1648721384073	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1648721384073	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1648721384073	Sync.ErrorHandler	ERROR	Sync encountered an error: Error: Aborting sync, remote setup failed(resource://services-sync/stages/enginesync.js:95:13) JS Stack trace: sync@enginesync.js:95:13
+1648721384073	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1648721384074	Sync.Service	DEBUG	Exception calling anonymous function: Error: Aborting sync, remote setup failed(resource://services-sync/stages/enginesync.js:95:13) JS Stack trace: sync@enginesync.js:95:13
