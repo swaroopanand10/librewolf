@@ -1,13 +1,13 @@
 9
 
 https://codeforces.com/
-https://codeforces.com/service-worker-19243.js
+https://codeforces.com/service-worker-35738.js
 true
-{cc770d97-7ca7-4b0b-b547-712734b429af}
+{29979c45-242c-41f9-add9-30ad59863a2d}
 0
-1649063401564024
-1649063401565777
-1649063401224496
+1650221353367612
+1650221357287444
+1650221354050500
 0
 true
 #

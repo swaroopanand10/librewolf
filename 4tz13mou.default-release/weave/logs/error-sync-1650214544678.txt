@@ -1,0 +1,127 @@
+1650213943648	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1650213943653	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1650213943654	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
+1650214543649	Sync.Service	DEBUG	User-Agent: LibreWolf/99.0 (Linux x86_64) FxSync/1.101.0.20220410100435.desktop
+1650214543649	Sync.Service	INFO	Starting sync at 2022-04-17 16:55:43 in browser session _rJQSzDzyBOf
+1650214543649	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1650214543653	Sync.Status	INFO	Resetting Status.
+1650214543653	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1650214543654	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1650214543654	FirefoxAccounts	DEBUG	getOAuthToken enter
+1650214543656	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1650214543656	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1650214543656	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1650214544120	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/collections
+1650214544121	Sync.Service	DEBUG	Fetching server configuration: https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/configuration
+1650214544381	Sync.Resource	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/info/configuration
+1650214544382	Sync.Service	DEBUG	Fetching global metadata record
+1650214544382	Sync.Service	DEBUG	Weave Version: 1.101.0 Local Storage: 5 Remote Storage: 5
+1650214544382	Sync.Service	DEBUG	Fetching and verifying -- or generating -- symmetric keys.
+1650214544382	Sync.Service	INFO	Testing info/collections: {"history":1650213942.96,"addons":1649226546.46,"forms":1649783970.98,"extension-storage":1650210152.68,"bookmarks":1650178457.58,"tabs":1650213942.63,"passwords":1649213987.6,"clients":1650200542.56,"crypto":1644767706.62,"meta":1649188987.37,"prefs":1650200485.83}
+1650214544382	Sync.CollectionKeyManager	INFO	Testing for updateNeeded. Last modified: 1644767706.62
+1650214544382	Sync.Synchronizer	DEBUG	Refreshing client list.
+1650214544382	Sync.Engine.Clients	DEBUG	Resetting clients last sync time
+1650214544637	Sync.Collection	DEBUG	GET success 200 https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/194602547/storage/clients?full=1&limit=1000
+1650214544644	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2152398878 - NS_ERROR_UNKNOWN_HOST
+1650214544644	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1650214544644	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1650214544645	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1650214544645	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1650214544645	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1650214544647	Sync.Engine.Clients	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 9 reconciled.
+1650214544648	Sync.Engine.Clients	DEBUG	Refreshing the known stale clients list
+1650214544648	Sync.Engine.Clients	INFO	Hiding stale client qERSmDD89iPW with age 1025602.4100000858
+1650214544648	Sync.Engine.Clients	INFO	Hiding stale client tYA_eayQS5dO with age 1154434.9200000763
+1650214544648	Sync.Engine.Clients	INFO	Hiding stale client CDP7AGoE0HPl with age 1158247.850000143
+1650214544648	Sync.Engine.Clients	INFO	Hiding stale client _czlG4jSFVpW with age 1158658.120000124
+1650214544648	Sync.Engine.Clients	INFO	Hiding stale client x6PTlTUGo3SA with age 1159039.9100000858
+1650214544648	Sync.Engine.Clients	INFO	Hiding stale client AfHhHNGVZrFU with age 1159296.9600000381
+1650214544651	Sync.Engine.Clients	INFO	Uploading 0 outgoing records
+1650214544652	Sync.Synchronizer	INFO	Updating enabled engines: 3 clients.
+1650214544653	Sync.Synchronizer	INFO	Syncing all enabled engines.
+1650214544654	Sync.Engine.Prefs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1650214544654	Sync.Engine.Prefs	INFO	Uploading 0 outgoing records
+1650214544656	Sync.Engine.Passwords	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1650214544656	Sync.Engine.Passwords	INFO	Uploading 0 outgoing records
+1650214544657	Sync.Engine.Tabs	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1650214544657	Sync.Engine.Tabs	INFO	Uploading 0 outgoing records
+1650214544657	Sync.Engine.Bookmarks	DEBUG	Checking if server sync ID sgrNvxxHBl72 matches existing
+1650214544659	Sync.Engine.Bookmarks	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1650214544659	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust
+1650214544660	Sync.Engine.Bookmarks.Mirror	DEBUG	Building local tree
+1650214544663	Sync.Engine.Bookmarks.Mirror	DEBUG	Building remote tree
+1650214544665	Sync.Engine.Bookmarks.Mirror	DEBUG	Building merged tree
+1650214544665	Sync.Engine.Bookmarks.Mirror	DEBUG	Applying merged tree
+1650214544665	Sync.Engine.Bookmarks.Mirror	DEBUG	Merging bookmarks in Rust took 5.870ms
+1650214544665	Sync.Engine.Bookmarks.Mirror	DEBUG	No changes detected in both mirror and Places
+1650214544665	Sync.Engine.Bookmarks	INFO	Uploading 0 outgoing records
+1650214544666	Sync.Engine.Bookmarks.BookmarkSyncUtils	DEBUG	pushChanges: Processed change records: {"weak":0,"skipped":0,"updated":0}
+1650214544666	Sync.Engine.Addons	DEBUG	Refreshing reconciler state
+1650214544666	Sync.AddonsReconciler	INFO	Refreshing global state from AddonManager.
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon HTML Content Blocker (version=0.1.9, id=jid1-p8wT8wUxc4KaJo@jetpack)
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ff2mpv (version=4.0.0, id=ff2mpv@yossarian.net)
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon NewTab Adapter (version=1.3.0, id=newtab-adapter@gdh1995.cn)
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dark Reader (version=4.9.47, id=addon@darkreader.org)
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Vimium (version=1.67.1, id={d7742d87-e61d-4b78-b8a1-b469842139fa})
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Tunable Image Block (version=1.7.1, id={0044daad-3ff6-422a-8a2b-8d8bb602ac5a})
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon DF YouTube (Distraction Free) (version=1.13.504, id=dfyoutube@example.com)
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Codeforces Practice Tracker (version=1.2.0, id={26b28813-67de-4a83-9fbe-eaf008f68732})
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Video Speed Controller (version=0.6.3.3, id={7be2ba16-0f1e-4d93-9ebc-5164397477a9})
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon I don't care about cookies (version=3.3.8, id=jid1-KKzOGWgsW3Ao4Q@jetpack)
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dark space - The best dynamic theme (version=1.1.1, id={22b0eca1-8c02-4c0d-a5d7-6604ddd9836e})
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Send to MPV player (version=0.1.3, id={ccad95df-add6-4d8a-aa5c-cdc384075bab})
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Fast Image Blocker (version=0.2.0, id=jid1-k4sH9jPOx3ZqUb@jetpack)
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Hide YouTube Thumbnails (version=1.0.1, id={17c4514d-71fa-4633-8c07-1fe0b354c885})
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Vim Vixen (version=1.2.3, id=vim-vixen@i-beam.org)
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Image Video Block (version=3.4, id={dabe08f4-8ec2-4dc5-a4dd-fda31fb8b38c})
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ImageBlock (version=5.0, id=imageblock@hemantvats.com)
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Codeforces++ (version=2.1.3, id={0ae7a69f-1183-4b7a-9e71-8a0b7d5cbda2})
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon ColorZilla (version=3.3, id={6AC85730-7D0F-4de0-B3FA-21142DD85326})
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon New Tab Override (version=15.1.1, id=newtaboverride@agenedia.com)
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Tab Session Manager (version=6.11.1, id=Tab-Session-Manager@sienori)
+1650214544667	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Form Autofill (version=1.0.1, id=formautofill@mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Picture-In-Picture (version=1.0.0, id=pictureinpicture@mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Screenshots (version=39.0.1, id=screenshots@mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Web Compatibility Interventions (version=31.0.0, id=webcompat@mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon System theme — auto (version=1.3, id=default-theme@mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Add-ons Search Detection (version=2.0.0, id=addons-search-detection@mozilla.com)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Wikipedia (en) (version=1.1, id=wikipedia@search.mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon DuckDuckGo (version=1.1, id=ddg@search.mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Dark (version=1.2, id=firefox-compact-dark@mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Light (version=1.2, id=firefox-compact-light@mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Rawrrr! (version=1.0, id=2022red-colorway@mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon That’s So Fire (version=1.0, id=2022orange-colorway@mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Vegging Out (version=1.0, id=2022green-colorway@mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Firefox Alpenglow (version=1.4, id=firefox-alpenglow@mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Cheese Puff (version=1.0, id=2022yellow-colorway@mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Bomb-dot-com (version=1.0, id=2022purple-colorway@mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Chillaxing (version=1.0, id=2022blue-colorway@mozilla.org)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon uBlock Origin (version=1.42.4, id=uBlock0@raymondhill.net)
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Read Aloud: A Text to Speech Voice Reader (version=1.54.1, id={ddc62400-f22d-4dd3-8b4a-05837de53c2e})
+1650214544668	Sync.AddonsReconciler	DEBUG	Rectifying state for addon Vimium C - All by Keyboard (version=1.98.0, id=vimium-c@gdh1995.cn)
+1650214544669	Sync.AddonsReconciler	INFO	Saving reconciler state to file: addonsreconciler
+1650214544670	Sync.Engine.Addons	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1650214544671	Sync.Engine.Addons	INFO	Uploading 0 outgoing records
+1650214544671	Sync.Engine.Addresses	DEBUG	First sync, uploading all items
+1650214544671	Sync.Engine.Addresses	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1650214544671	Sync.Engine.Addresses	INFO	Uploading 0 outgoing records
+1650214544671	Sync.Engine.CreditCards	DEBUG	First sync, uploading all items
+1650214544671	Sync.Engine.CreditCards	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1650214544671	Sync.Engine.CreditCards	INFO	Uploading 0 outgoing records
+1650214544672	Sync.Engine.Forms	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1650214544672	Sync.Engine.Forms	INFO	Uploading 0 outgoing records
+1650214544672	Sync.Engine.History	DEBUG	Checking if server sync ID p43fx9pUkHV8 matches existing
+1650214544673	Sync.Engine.History	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1650214544673	Sync.Engine.History	INFO	Uploading 0 outgoing records
+1650214544673	Sync.Engine.Extension-Storage	INFO	Records: 0 applied, 0 successfully, 0 failed to apply, 0 newly failed to apply, 0 reconciled.
+1650214544674	Sync.Engine.Extension-Storage	INFO	Uploading 0 outgoing records
+1650214544674	Sync.Doctor	INFO	Skipping consultation: telemetry reporting is disabled
+1650214544674	Sync.Status	DEBUG	Status.sync: success.sync => success.sync
+1650214544674	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1650214544675	Sync.Synchronizer	INFO	Sync completed at 2022-04-17 16:55:44 after 1.02 secs.
+1650214544675	Sync.Declined	DEBUG	Handling remote declined: []
+1650214544675	Sync.Declined	DEBUG	Handling local declined: []
+1650214544675	Sync.Declined	DEBUG	Declined changed? false
+1650214544675	Sync.Service	INFO	No change to declined engines. Not reuploading meta/global.
+1650214544675	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1650214544678	FirefoxAccounts	TRACE	not checking freshness of profile as it remains recent
